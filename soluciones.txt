@@ -1,1 +1,2 @@
 ls -l | sed 's/:/-/g' | sed 's/ \+/:/g' | cut -d: -f9,5
+ls -l | sed 's/:/-/g' | sed 's/ \+/:/g' | cut -d: -f9,5 | sort -n
