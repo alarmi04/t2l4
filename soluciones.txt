@@ -1,2 +1,3 @@
 ls -l | sed 's/:/-/g' | sed 's/ \+/:/g' | cut -d: -f9,5
 ls -l | sed 's/:/-/g' | sed 's/ \+/:/g' | cut -d: -f9,5 | sort -n
+cat derbi.txt | sed 's/ /-/g' | sed 's/,/:/g' | cut -d: -f3,4,5 | grep empate | sort -k3n | cut -d: -f2,3 > empate.txt
